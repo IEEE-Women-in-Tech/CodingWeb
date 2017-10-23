@@ -1,0 +1,20 @@
+<section id="code">
+    <div class="container">
+        <div class="col-md-4">
+            <div class="row margin-top" ng-repeat="tools in cvm.tools | chunkBy:2">
+                <div class="col-md-6" ng-repeat="tool in tools">
+                    <a href="{{tool.url}}" target="_blank">
+                        <img src="{{tool.img}}" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-8">
+            <h4>The Code</h4>
+            <h5>Building websites may not be a common parent-daughter activity, but we're determined to change that.</h5> 
+            <h5>In the summer of 2014 we launched a pilot session specifically for mothers and daughters to learn to code, and it was a huge success! In 2015 the program ran every other month, but in 2016 we are delighted to be able to provide a session every 2nd Saturday of the month through November and expand the sessions to father-daughter combos!</h5>
+            <h5>Coding duos will envision themselves cupcake shop owners in need of creating a website to show of their baked goods. They'll learn website building from start to finishing, doing everything from displaying their own copy to adding a color theme to suit their tastes to hosting their site on Github Pages. </h5>
+        </div>
+    </div>
+</section>

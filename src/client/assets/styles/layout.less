@@ -1,0 +1,311 @@
+@white: #ffffff;
+@light-pink: #f3c6dc;
+@pink: #f1b6d2;
+@coral: #ef3965;
+@dark-coral: #cb3056;
+@sand: #f4ddae;
+@dark-sand: #e7b67f;
+@brown: #9a856d;
+@aqua: #03A696;
+@dark-aqua: #039486;
+
+@dark-purple: #484e78;
+@light-purple: #666b8f;
+@plum: #9d81a2;
+@light-plum: #ba99c0;
+@light-olive: #d0c675;
+@dark-olive: #beb66d;
+@teal: #009875;
+
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding:0px;
+    margin:0px;
+    font-family: 'Lato', sans-serif;
+    color: @white;
+}
+
+.btn {
+    margin: .5em 0;
+}
+
+.nav {
+    background: @coral;
+    text-align: center;
+    border: none;
+    ul {
+        // display: inline-block;
+        // list-style-type: none;
+        // margin: 0px;
+        // padding: 0px;
+        li {
+            // float: left;
+            // margin: 10px;
+            a {
+                color: @white !important;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+section {
+    min-height: 600px;
+    img {
+        width: 100%;
+    }
+}
+
+.margin-top {
+    margin-top: 60px;
+}
+
+#home {
+    background: @pink;
+    text-align: center;
+    padding: 150px 0px 100px 0px;
+
+    a.cupcakes-logo {
+        display: block;
+       height: 300px;
+       width: 300px;
+       background: url(../images/logos/logo-cupcakes.png) no-repeat 0px 0px;
+       background-size: contain;
+    }
+}
+
+#code, #press {
+    background: @sand;
+    padding: 150px 0px 100px 0px;
+    border-top: solid 10px @dark-sand;
+    border-bottom: solid 10px @dark-sand;
+    color: @brown;
+    img {
+        margin-top: 50px;
+    }
+}
+
+#cupcakes {
+    background: @aqua;
+    padding: 150px 0px 100px 0px;
+    border-top: solid 10px @dark-aqua;
+    border-bottom: solid 10px @dark-aqua;
+    img {
+        width: auto;
+    }
+    .cupcakes {
+        display: block;
+       height: 250px;
+       margin-top:20px;
+       background: url(../images/cupcakestand.jpg) no-repeat 0px 0px;
+       background-size: contain;
+    }
+    .cupcake-logo {
+        display: block;
+       height: 100px;
+       width: 271px;
+       margin-top:20px;
+       background: url(../images/babycakes.png) no-repeat 0px 0px;
+       background-size: contain;
+    }
+}
+
+#mentors {
+    background: @light-purple;
+    text-align: center;
+    padding: 150px 0px 100px 0px;
+    border-top: solid 10px @dark-purple;
+    border-bottom: solid 10px @dark-purple;
+    .mentor {
+        a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            overflow: hidden;
+            img {
+               width: 50%;
+            }
+        }
+
+    }
+    h1 {
+        margin-top: 20px;
+    }
+}
+
+#signup {
+    background: @pink;
+    padding: 150px 0px 100px 0px;
+    border-top: solid 10px @light-pink;
+    border-bottom: solid 10px @light-pink;
+    text-align: center;
+    .margin-bottom {
+        margin-bottom: 10px;
+    }
+    img {
+        width: auto;
+    }
+    ul {
+        width: 80%;
+        margin: 20px auto 10px;
+        padding: 0px;
+        text-align: left;
+    }
+    a {
+      display: block;
+    }
+    .host {
+        display: inline-block;
+       margin: 10px auto;
+    }
+    h5 {
+      font-size: 2.5em;
+    }
+
+    h6 {
+      font-size: 2em;
+      font-weight: 600;
+    }
+    .map {
+      p {
+        margin: 20px 0px;
+      }
+    }
+}
+
+#contact {
+    background: @white;
+    padding: 150px 0px 100px 0px;
+    border-top: solid 10px @teal;
+    border-bottom: solid 10px @dark-coral;
+    img {
+        margin-bottom: 30px;
+    }
+    h4, h5, p{
+        color: @teal;
+    }
+
+    a.kcwit-logo {
+        display: block;
+       height: 300px;
+       width: 300px;
+       background: url(../images/logos/kcwit-logo.png) no-repeat 0px 0px;
+       background-size: contain;
+    }
+}
+
+#footer {
+    background: @coral;
+    min-height: 50px;
+}
+.angular-google-map-container {
+        height: 300px;
+    }
+
+.margin-bottom {
+    margin-bottom: 50px;
+}
+
+.map {
+    h5 {
+        border-bottom: 10px;
+    }
+    img {
+        margin-top: 0px;
+        height: 70px;
+        width: auto;
+    }
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+    }
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+    p + h4 {
+        margin-top: 28px;
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 860px;
+    }
+
+    h2 {
+        font-weight: 300;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+#map-canvas {
+width: 300px;
+height: 300px;
+background-color: #CCC;
+}

@@ -1,0 +1,39 @@
+<section id="mentors">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h4>The Mentors</h4>
+                <h5>These ladies write code for their day job and can't wait to help you get started. They're kind of like super heroes, with great taste!</h5>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row margin-bottom" >
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-3 mentor" ng-repeat="leader in mvm.leaders">
+                <a href="http://www.twitter.com/{{leader.twitter}}" target="_blank">
+                    <img class="img-circle" src="{{leader.img}}" alt="{{leader.name}}"/>
+                    <h6>{{leader.name}}</h6>
+                    <p>{{leader.title}}</p>
+                </a>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+        <div class="row margin-top" ng-repeat="mentors in mvm.mentors | chunkBy:4">
+            <div class="col-md-3 mentor" ng-repeat="mentor in mentors">
+                <a href="http://www.twitter.com/{{mentor.twitter}}" target="_blank">
+                    <img class="img-circle" src="{{mentor.img}}" alt="{{mentor.name}}"/>
+                    <h6>{{mentor.name}}</h6>
+                    <p>{{mentor.title}}</p>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <h1>Interested in Mentoring? </h1>
+            <a class="btn btn-default" href="http://eepurl.com/bBadyH" target="_blank">
+            Sign up here!</a>
+        </div>
+    </div>
+</section>
